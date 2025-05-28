@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOUR</title>
+    <link rel="stylesheet" href="colour.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Random color generator</h1>
+    <button id="colorbutton">Generator color</button>
+    <p id="colorcode"> click the button to get a color!</p>
+    
+    </div>
+<style>
+
+
+ 
+.container{
+   margin: auto;
+    margin-top: 200px;
+    height: 200px;
+    width: 50%;
+    padding: 20px;
+    background-color: blanchedalmond;
+    background-size: cover;
+    align-items: center;
+    color:black;
+    text-align: center;
+    align-items: center;
+}
+button{
+    padding: 10px,20px;
+    font-size: 16px;
+    cursor:pointer
+}
+#colorcode{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+</style>
+<script>
+    function getcolor(){
+         const letter="0123456789ABCDEF"
+         let color="#";
+         for(let i=0;i<6;i++){
+            color+=letter[Math.floor(Math.random()*16)];
+        
+         }
+         return color;
+    }
+    document.getElementById("colorbutton").addEventListener("click",function(){
+    const newcolor=getcolor();
+    document.body.style.backgroundColor=newcolor;
+    document.getElementById("colorcode").textContent='color code'+ newcolor;
+    })
+</script>
+</body>
+</html>

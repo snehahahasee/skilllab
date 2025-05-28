@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <div id="div3">
+    <marquee behavior="scroll" direction="left">
+    <p id="p1">RESULTS ARE OUT!!</p>
+    <p id="p2">CHECK ASAP!!</p>
+    <img src="i6.jpg" alt="" >
+     </marquee>
+     </div>
+    <div id="div1">
+    <label for="">NAME:</label>
+    <input type="text" name="" id="name">
+    <button onclick="result()">SUBMIT</button>
+    <link rel="stylesheet" href="result.css">
+    </div>
+    <div id="div2">
+    <p id="res"> RESULT IS !!</p>
+    </div>
+
+    <script>
+        function result(){
+            var name=document.getElementById("name");
+            var per=Math.random()*100;
+            var res=document.getElementById("res");
+            res.innerHTML="THE RESULT IS "+per;
+            if(per<35)
+        {
+            res.innerHTML="you have failed"+per;
+        }else if(per<=60 && per>=35){
+            res.innerHTML="you have passed"+per;
+        }
+        else{
+            res.innerHTML="distinction!!"+per;
+        }
+
+        
+        }
+        </script>
+
+</body>
+</html>

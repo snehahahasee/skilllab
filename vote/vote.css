@@ -1,0 +1,22 @@
+.c{
+    height: 100px;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgb(238, 4, 43);
+    color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    border: 10px solid burlywood;
+}
+body{
+    background-image: url(vote2.jpg);
+    background-size: cover;
+    align-items: center;
+    
+}
+p{
+    text-size-adjust: 50px;
+    text-decoration: solid;
+}

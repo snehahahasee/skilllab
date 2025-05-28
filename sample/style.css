@@ -1,0 +1,178 @@
+/*   universal selector 
+uses the symbol * to select all the properties in the css file    
+*{
+background-color: red;
+}
+*/
+
+/*   element selector 
+p{
+color: red;
+}
+*/
+/* class selector uses . operator
+ .c
+{
+    color: orange;
+}
+    */
+/* 
+id selector we use # and here the id name is sneha
+sneha{
+    color: palevioletred;
+}
+*/
+h1{
+    color: rgb(249, 248, 250);
+    background-color: pink;
+}
+h2{
+    color: blueviolet;
+}
+h3{
+    color: blueviolet;
+    
+}
+h4{
+    color: blueviolet;
+    
+}
+h5{
+    color: blueviolet;
+}
+    
+h6{
+    color: blueviolet;
+    
+}
+p{
+    color: rgb(233, 233, 243);
+    background-color: rgb(248, 8, 148);
+}
+body{
+    text-align: center;
+    
+   /* background-color: rgb(240, 175, 236); */
+   background-image: url(image/bg.jpg);
+  /* background-repeat: repeat-x;to repeat in x axis 
+   background-repeat: repeat-y;to repeat only in y axis
+   background-repeat: repeat;to repat at both axis */
+   background-attachment: fixed;
+   backdrop-filter: blur(4px);
+
+}
+body:hover{
+   /* text-decoration: solid; */
+    text-shadow: 5px 5px 10px yellow;
+   /* text-transform: lowercase;*/
+}
+li{
+    color: black;
+}
+.c
+{
+    color: rgb(3, 3, 3);
+    background-color: rgb(33, 197, 247);
+}
+#sneha{
+    color: palevioletred;
+}
+#snehac{
+    color: paleturquoise;
+}
+#div1
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(100, 20, 20);
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+    /*
+   border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    */
+
+}
+#div2
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(122, 111, 11);
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+
+}
+#div3
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(20, 99, 13);
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+
+}
+/* pseudo class called hover 
+
+#div1:hover{
+    background-color: antiquewhite;
+    box-shadow: 50px 50px 150px black;/* box-shadow x axis,y axis , size of shadow , color
+    border: 10px dotted black;
+}
+#div2:hover{
+    background-color: beige;
+     box-shadow: 50px 50px 150px black;
+     border: 10px dashed black;
+}
+#div3:hover{
+    background-color: aliceblue;
+     box-shadow: 50px 50px 150px black;
+     border: 10px solid black;
+}
+*/
+
+
+
+
+#div1:hover{
+    background-color: red;
+    box-shadow: 50px 50px 150px black;/* box-shadow x axis,y axis , size of shadow , color*/
+   
+}
+#div2:hover{
+    background-color: yellow;
+     box-shadow: 50px 50px 150px black;
+    
+}
+#div3:hover{
+    background-color: rgb(7, 233, 7);
+     box-shadow: 50px 50px 150px black;
+     
+}
+
+h1:hover{
+    text-transform: capitalize;
+    background-color: aliceblue;
+    color: black;
+    text-decoration:underline;
+}
+h2:hover {
+    text-transform: uppercase;
+    background-color: aliceblue;
+    color: black;
+}
+#main{
+    height: 750px;
+    width: 400px;
+    background-color: bisque;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin: 20px;
+
+}

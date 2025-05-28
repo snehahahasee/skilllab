@@ -1,0 +1,47 @@
+#div1{
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    background-size: cover;
+    align-items: center;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+
+}
+#div2{
+    margin: auto;
+    height: 50px;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    background-size: cover;
+    align-items: center;
+    color: antiquewhite;
+    text-align: center;
+    
+}
+body{
+    background-image: url(i4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p1{
+    background-color: rgb(235, 231, 225);
+    text-align: center;
+    color: black;
+
+}
+#p2{
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+}
+#div3{
+    align-items: center;
+    text-align: center;
+
+}

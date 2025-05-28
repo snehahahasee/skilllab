@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANTEEN</title>
+    <marquee behavior="scroll" direction="left">
+    <h1>WELCOME TO CANTEEN!!</h1>
+    <h1>MENU</h1>
+    </marquee>
+</head>
+<body>
+
+<div id="div1"> 
+<ol>
+    <p>ITEMS</p>
+   <li>
+     <label for="">IDLI[Rs:20]</label>
+    <input type="number" name="" id="idli">
+    </li>
+<li>
+    <label for="">DOSA[Rs:50]</label>
+    <input type="number" name="" id="dosa">
+    </li>
+<li>
+    <label for="">VADA[Rs:20]</label>
+    <input type="number" name="" id="vada">
+    </li>
+<li>
+    <label for="">SAMBAR[Rs:30]</label>
+    <input type="number" name="" id="sambar">
+    </li>
+    <li>
+    <label for="">UPPITU[Rs:40]</label>
+    <input type="number" name="" id="uppi">
+    </li>
+<li>
+    <label for="">RICEBATH[Rs:40]</label>
+    <input type="number" name="" id="riceb">
+    </li>
+<li>
+    <label for="">RAGI-BALL[Rs:10]</label>
+    <input type="number" name="" id="rb">
+    </li>
+<li>
+    <label for="">WHITE-RICE[Rs:30]</label>
+    <input type="number" name="" id="wrice">
+    </li>
+<li>
+    <label for="">PURI[Rs:60]</label>
+    <input type="number" name="" id="puri">
+    </li>
+    </ol>
+
+</div>    
+    <div id="div2">
+    <button onclick="bill()">SUBMIT</button>
+    <p id="res">THE TOTAL BILL IS !!</p>
+</div>
+<link rel="stylesheet" href="canteen.css">
+    <script>
+        function bill()
+        {
+            var idli=document.getElementById("idli").value;
+            var dosa=document.getElementById("dosa").value;
+            var vada=document.getElementById("vada").value;
+            var sambar=document.getElementById("sambar").value;
+            var uppitu=document.getElementById("uppi").value;
+            var riceb=document.getElementById("riceb").value;
+            var rb=document.getElementById("rb").value;
+            var wrice=document.getElementById("wrice").value;
+            var puri=document.getElementById("puri").value;
+            var total=(idli*20)+(dosa*50)+(vada*20)+(sambar*30)+(uppitu*40)+(riceb*40)+(rb*10)+(wrice*30)
+            +(puri*60);
+            res.innerHTML="AMOUNT TO BE PAID IS:"+total;
+
+
+        }
+    </script>
+
+
+</body>
+</html>
